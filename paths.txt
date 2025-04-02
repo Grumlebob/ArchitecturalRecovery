@@ -1,0 +1,17 @@
+Correct paths of the repos i analyze:
+C:\Programming\Architecture\ArchitecturalRecovery\Data\frontend
+And
+C:\Programming\Architecture\ArchitecturalRecovery\Data\api
+
+I am currently in:
+C:\Programming\Architecture\ArchitecturalRecovery\Tools\radon.ipynb
+
+This entire system used to analyze repos resides in
+C:\Programming\Architecture\ArchitecturalRecovery
+
+Kør folks:
+betano
+vindercasio
+
+
+
