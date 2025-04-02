@@ -9,3 +9,9 @@
 /Tools/minimal_example.py
 /Tools/zeeguu_call_graph.png
 /output
+/Tools/api_complexity_heatmap.png
+/Tools/api_hierarchy.png
+/Tools/api_module_dependencies.png
+/Tools/api_module_treemap.png
+/Tools/api_package_complexity.png
+/Tools/frontend_module_dependencies.png
