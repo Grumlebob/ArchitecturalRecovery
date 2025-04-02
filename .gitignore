@@ -1,3 +1,11 @@
 /Data/api
 /Data/frontend
 /Architectural-Lens
+/Tools/classes_zeeguu.dot
+/Tools/api_package_hierarchy.png
+/Tools/frontend_package_hierarchy.png
+/Tools/minimal_call_graph.dot
+/Tools/minimal_call_graph.png
+/Tools/minimal_example.py
+/Tools/zeeguu_call_graph.png
+/output
