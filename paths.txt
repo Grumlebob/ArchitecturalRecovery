@@ -4,14 +4,20 @@ And
 C:\Programming\Architecture\ArchitecturalRecovery\Data\api
 
 I am currently in:
-C:\Programming\Architecture\ArchitecturalRecovery\Tools\radon.ipynb
+C:\Programming\Architecture\ArchitecturalRecovery\Tools\pyreverse.ipynb
 
 This entire system used to analyze repos resides in
 C:\Programming\Architecture\ArchitecturalRecovery
 
-Kør folks:
-betano
-vindercasio
+And inside the Data/api the backend project is:
 
+Data
+ └── api
+      └── zeeguu
+           ├── api
+           │    └── endpoints
+           ├── core
+           ├── config
+           └── logging
 
 
