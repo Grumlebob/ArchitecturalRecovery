@@ -3,3 +3,5 @@ https://graphviz.org/download/
 pip install prospector
 
 pip install pyan3
+
+pip install --upgrade pylint astroid
