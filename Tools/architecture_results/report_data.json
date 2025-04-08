@@ -1,9 +1,0 @@
-{
-  "backend": {
-    "modules": [],
-    "dependencies": [],
-    "core_modules": [],
-    "layers": [],
-    "architectural_smells": []
-  }
-}

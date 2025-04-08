@@ -1,18 +1,5 @@
 https://graphviz.org/download/ 
 
-
 pip install prospector
 
-//Fejler måske. Men prøv alligevel at download, hvis prospector.ipynb ikke virker
-pip install pydepend
-
-
 pip install pyan3
-
-pip install networkx
-
-pip install matplotlib
-
-pip install pydot
-
-pip install radon
