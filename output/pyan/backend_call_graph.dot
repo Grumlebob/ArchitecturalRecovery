@@ -1,0 +1,45 @@
+digraph G {
+    graph [rankdir=TB, clusterrank="local"];
+    subgraph cluster_G {
+
+        graph [style="filled,rounded",fillcolor="#80808018", label=""];
+        __init__ [label="__init__", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="0"];
+        env_var_defs_default [label="env_var_defs_default", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="1"];
+        install_stanza_models [label="install_stanza_models", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="2"];
+        setup [label="setup", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="3"];
+        start [label="start", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="4"];
+        subgraph cluster_install_stanza_models {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="install_stanza_models"];
+            install_stanza_models__stanza_model_installation [label="stanza_model_installation\n(install_stanza_models.py:8)", style="filled", fillcolor="#ccfeccb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_setup {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="setup"];
+            setup__DevelopScript [label="DevelopScript\n(setup.py:18)", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="3"];
+            setup__InstallScript [label="InstallScript\n(setup.py:24)", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="3"];
+            setup__ntlk_install_packages [label="ntlk_install_packages\n(setup.py:30)", style="filled", fillcolor="#ccfefeb2", fontcolor="#000000", group="3"];
+            subgraph cluster_setup__DevelopScript {
+
+                graph [style="filled,rounded",fillcolor="#80808018", label="setup.DevelopScript"];
+                setup__DevelopScript__run [label="run\n(setup.py:19)", style="filled", fillcolor="#99feffb2", fontcolor="#000000", group="3"];
+            }
+            subgraph cluster_setup__InstallScript {
+
+                graph [style="filled,rounded",fillcolor="#80808018", label="setup.InstallScript"];
+                setup__InstallScript__run [label="run\n(setup.py:25)", style="filled", fillcolor="#99feffb2", fontcolor="#000000", group="3"];
+            }
+        }
+    }
+        install_stanza_models -> install_stanza_models__stanza_model_installation [style="dashed", color="#838b8b"];
+        setup -> setup__InstallScript [style="dashed", color="#838b8b"];
+        setup -> setup__ntlk_install_packages [style="dashed", color="#838b8b"];
+        setup -> setup__DevelopScript [style="dashed", color="#838b8b"];
+        setup__DevelopScript -> setup__DevelopScript__run [style="dashed", color="#838b8b"];
+        setup__InstallScript -> setup__InstallScript__run [style="dashed", color="#838b8b"];
+        install_stanza_models -> install_stanza_models__stanza_model_installation [style="solid", color="#000000"];
+        setup -> setup__InstallScript [style="solid", color="#000000"];
+        setup -> setup__DevelopScript [style="solid", color="#000000"];
+        setup__DevelopScript__run -> setup__ntlk_install_packages [style="solid", color="#000000"];
+        setup__InstallScript__run -> setup__ntlk_install_packages [style="solid", color="#000000"];
+    }
