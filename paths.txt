@@ -1,23 +1,21 @@
-Correct paths of the repos i analyze:
-C:\Programming\Architecture\ArchitecturalRecovery\Data\frontend
-And
+Correct path of the repo i analyze:
 C:\Programming\Architecture\ArchitecturalRecovery\Data\api
 
 I am currently in:
-C:\Programming\Architecture\ArchitecturalRecovery\Tools\pyreverse.ipynb
+C:\Programming\Architecture\ArchitecturalRecovery\Tools\radon.ipynb
 
 This entire system used to analyze repos resides in
 C:\Programming\Architecture\ArchitecturalRecovery
 
-And inside the Data/api the backend project is:
+Here is how it looks:
 
 Data
- └── api
+ └── api <- Root of solution i am analysing lives here
       └── zeeguu
            ├── api
            │    └── endpoints
            ├── core
            ├── config
            └── logging
-
-
+Tools
+ └── toolscript.ipynb <- My script lives here.
