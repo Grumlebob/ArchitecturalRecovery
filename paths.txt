@@ -19,3 +19,6 @@ Data
            └── logging
 Tools
  └── toolscript.ipynb <- My script lives here.
+Output
+ └──radon
+       └── someGraph.png <- Image output of tools should be here
